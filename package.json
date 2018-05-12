@@ -1,0 +1,31 @@
+{
+  "name": "book_shelf_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "author": "Valientine",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "moment-js": "^1.1.15",
+    "mongoose": "^5.0.17",
+    "react-burger-menu": "^2.4.4",
+    "react-css-transition": "^0.7.4",
+    "react-transition-group": "^2.3.1"
+  }
+}
